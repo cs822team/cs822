@@ -1,388 +1,211 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-<head>
- <meta charset="gb2312">
- <title>我的博客</title>
- <meta name="关键字" content="">
- <link href="css/buju.css" rel="stylesheet">
- <link href="css/index.css" rel="stylesheet">
- <script type="text/javascript" src="js/jquery.min.js"></script>
- <script type="text/javascript" src="js/sliders.js"></script>
-</head>
-<body>
-  <header>
-    <div class="logo f_l">
-	   <a href="#">
-	      <img src="images/logo.png">
-	   </a>
-	 </div>
-	 <div id="topnav" class="f_r">
-	     <ul>
-         	 <input  type="text" style="width:180px; height:30px;"/><a href="#" target="_blank">Search</a>
-		     <a href="#" target="_blank" id="topnav_current">Index</a>
-              <a href="#" target="_blank">Question</a>
-			  <a href="#" target="_blank">User</a>
-			<!--
-              <a href="#" target="_blank">心情</a>
-			  <a href="#" target="_blank">相册</a>
-			  <a href="#" target="_blank">留言</a>
-              -->
-		  </ul>
-	 </div>
-  </header>
-  <article>
-    <div class="l_box f_l">
-	  <div class="banner">
-	    <div id="slide-holder">
-		   <div id="slide-runner">
-		     <a href="/" target="_blank">
-			     <img id="slide-img-1" src="images/a1.jpg" alt style>
-			  </a>
-			  <a href="/" target="_blank">
-			     <img id="slide-img-2" src="images/a2.jpg" alt style>
-			  </a>
-			  <a href="/" target="_blank">
-			     <img id="slide-img-3" src="images/a3.jpg" alt style>
-			  </a>
-			  <a href="/" target="_blank">
-			     <img id="slide-img-4" src="images/a4.jpg" alt style>
-			  </a>
-			  <div id="slide-controls" style="display:block;">
-			    <p id="slide-client" class="text">
-				    <strong></strong>
-					 <span></span>
-				 </p>
-              <p id="slide-desc" class="text"></p> 	
-              <p id="slide-nav"></p>		     			  
-			  </div>
-		   </div> 
-		 </div>
-	  </div>
-	  <script>
-	     if(!window.slider){
-		     var slider={};
-		 }
-		 slider.data=[
-		 {
-		     "id":"slide-img-1", //与slide-runner中的img标签id对应
-			 "client":"Knowledge",
-			 "desc":"Iphone"     //这里描述图片内容
-		 },
-		 {
-		     "id":"slide-img-2", 
-			 "client":"Knowledge",
-			 "desc":"Coding"
-		 },
-		 {
-		     "id":"slide-img-3", 
-			 "client":"Knowledge",
-			 "desc":"Life"
-		 },
-		 {
-		     "id":"slide-img-4", 
-			 "client":"Knowledge",
-			 "desc":"Travelling"
-		 }
-		 ];
-	   </script>
-	   <div class="topnews">
-	   <h2>
-	   <span>
-	   <!-- <a href="/" target="_blank">武魂大罗</a>
-		 <a href="/" target="_blank">装逼大神</a>
-		 <a href="/" target="_blank">屌毛推荐</a>-->
-	   </span>	 
-	    Questions
-	   </h2>
-	     <div class="blogs">
-		      <figure>
-			     <img src="images/01.jpg">
-			   </figure>
-			   <ul>
-			     <h3><a href="/">Question1</a></h3> 
-				  <p>i have a question about ......</p>
-			     <p class="autor">
-				    <span class="lm f_l">
-					    <a href="/">Java</a>
-					 </span>
-                     <span class="lm f_l">
-					    <a href="/">Java</a>
-					 </span>
-                     <span class="lm f_l">
-					    <a href="/">Java</a>
-					 </span>
-					 <span class="dtime f_l">2016-02-16</span>
-					 <span class="viewnum f_r">
-					    scane（<a href="/">666</a>）</span>
-					 <span class="pingl f_r">	
-					    comment（<a href="/">60</a>）</span>
-                      <span class="pingl f_r">	
-					    like（<a href="/">60</a>）</span>
-				  </p>
-			   </ul>
-	       </div>
-		  <div class="blogs">
-		      <figure>
-			     <img src="images/02.jpg">
-			   </figure>
-			   <ul>
-			     <h3><a href="/">教你怎样用欠费手机拨打电话</a></h3>
-				  <p>"初次相识的喜悦，让你觉得似乎找到了知音。于是，对于投缘的人，开始了较频繁的交往。渐渐地，初识的喜悦退尽，接下来就是仅仅保持着联系，平淡到偶尔在节假曰发短信互致问候..."</p>
-			     <p class="autor">
-				    <span class="lm f_l">
-					    <a href="/">个人博客</a>
-					 </span>
-					 <span class="dtime f_l">2016-02-16</span>
-					 <span class="viewnum f_r">
-					    浏览（<a href="/">666</a>）</span>
-					 <span class="pingl f_r">	
-					    评论（<a href="/">60</a>）</span>
-				  </p>
-			   </ul>
-	       </div>
-		  <div class="blogs">
-		     <figure>
-			     <img src="images/03.jpg">
-			   </figure>
-			   <ul>
-			     <h3><a href="/">原来以为，一个人的勇敢是，删掉他的手机号码...</a></h3>
-				  <p>"原来以为，一个人的勇敢是，删掉他的手机号码、QQ号码等等一切，努力和他保持距离。等着有一天，习惯不想念他，习惯他不在身边,习惯时间把他在我记忆里的身影磨蚀干净..."</p>
-			     <p class="autor">
-				    <span class="lm f_l">
-					    <a href="/">个人博客</a>
-					 </span>
-					 <span class="dtime f_l">2016-02-16</span>
-					 <span class="viewnum f_r">
-					    浏览（<a href="/">666</a>）</span>
-					 <span class="pingl f_r">	
-					    评论（<a href="/">60</a>）</span>
-				  </p>
-			   </ul>
-	       </div>
-	     <div class="blogs">
-		     <figure>
-			     <img src="images/04.jpg">
-			   </figure>
-			   <ul>
-			     <h3><a href="/">手机的16个惊人小秘密，据说99.999%的人都不知</a></h3>
-				  <p>"引导语：知道么，手机有备用电池，手机拨号码12593+电话号码=陷阱……手机具有很多你不知道的小秘密，说出来一定很惊奇！不信的话就来看看吧！..."</p>
-			     <p class="autor">
-				    <span class="lm f_l">
-					    <a href="/">个人博客</a>
-					 </span>
-					 <span class="dtime f_l">2016-02-16</span>
-					 <span class="viewnum f_r">
-					    浏览（<a href="/">666</a>）</span>
-					 <span class="pingl f_r">	
-					    评论（<a href="/">60</a>）</span>
-				  </p>
-			   </ul>
-	       </div>
-		  <div class="blogs">
-		       <figure>
-			     <img src="images/05.jpg">
-			   </figure>
-			   <ul>
-			     <h3><a href="/">你面对的是生活而不是手机</a></h3>
-				  <p>"每一次与别人吃饭，总会有人会拿出手机。以为他们在打电话或者有紧急的短信，但用余光瞟了一眼之后发现无非就两件事：1、看小说，2、上人人或者QQ..."</p>
-			     <p class="autor">
-				    <span class="lm f_l">
-					    <a href="/">个人博客</a>
-					 </span>
-					 <span class="dtime f_l">2016-02-16</span>
-					 <span class="viewnum f_r">
-					    浏览（<a href="/">666</a>）</span>
-					 <span class="pingl f_r">	
-					    评论（<a href="/">60</a>）</span>
-				  </p>
-			   </ul>
-	        </div>
-		  <div class="blogs">
-		       <figure>
-			     <img src="images/06.jpg">
-			   </figure>
-			   <ul>
-			     <h3><a href="/">豪雅手机正式发布! 在法国全手工打造的奢侈品</a></h3>
-				  <p>"现在跨界联姻，时尚、汽车以及运动品牌联合手机制造商联合发布手机产品在行业里已经不再新鲜，上周我们给大家报道过著名手表制造商瑞士泰格·豪雅（Tag Heuer） 联合法国的手机制造商Modelabs发布的一款奢华手机的部分谍照，而近日该手机终于被正式发布了..."</p>
-			     <p class="autor">
-				    <span class="lm f_l">
-					    <a href="/">个人博客</a>
-					 </span>
-					 <span class="dtime f_l">2016-02-16</span>
-					 <span class="viewnum f_r">
-					    浏览（<a href="/">666</a>）</span>
-					 <span class="pingl f_r">	
-					    评论（<a href="/">60</a>）</span>
-				  </p>
-			   </ul>
-	        </div>
-		  <div class="blogs">
-		      <figure>
-			     <img src="images/04.jpg">
-			   </figure>
-			   <ul>
-			     <h3><a href="/">手机的16个惊人小秘密，据说99.999%的人都不知</a></h3>
-				  <p>"引导语：知道么，手机有备用电池，手机拨号码12593+电话号码=陷阱……手机具有很多你不知道的小秘密，说出来一定很惊奇！不信的话就来看看吧！..."</p>
-			     <p class="autor">
-				    <span class="lm f_l">
-					    <a href="/">个人博客</a>
-					 </span>
-					 <span class="dtime f_l">2016-02-16</span>
-					 <span class="viewnum f_r">
-					    浏览（<a href="/">666</a>）</span>
-					 <span class="pingl f_r">	
-					    评论（<a href="/">60</a>）</span>
-				  </p>
-			   </ul>
-	       </div>
-	   </div>
-	 </div>  
-    <div class="r_box f_r">
-	   <div class="tit01">
-         <h3>About us</h3>
-		  <div class="gzwm">
-		    <ul>
-			   <li><a class="xlwb" href="#" target="_blank">新浪微博</a></li>
-			   <li><a class="txwb" href="#" target="_blank">腾讯微博</a></li>
-			   <li><a class="rss" href="#" target="_blank">RSS</a></li>
-			   <li><a class="wx" href="#" target="_blank">邮箱</a></li>
-			</ul>
-		  </div>
-       </div> 
-	   <div class="ad300x100">
-	       <img src="images/wh.jpg">
-	   </div>
-	   <div class="tab" id="lp_right_select">
-	     <script>
-		     window.onload=function()
-			 {
-			     var oLi=document.getElementById("tb").getElementsByTagName("li");
-				 var oUl=document.getElementById("tb-main").getElementsByTagName("div");
-				 for(var i=0;i<oLi.length;i++)
-				 {
-				     oLi[i].index=i;
-					 oLi[i].onmouseover=function()
-					 {
-					    for(var n=0;n<oLi.length;n++)
-						    oLi[n].className="";
-							this.className="cur";
-						for(var n=0;n<oUl.length;n++)
-                            oUl[n].style.display="none";
-                            oUl[this.index].style.display="block";							
-					 }
-				 }
-			 }
-		  </script>
-	     <div class="tab-top">
-		      <ul class="hd" id="tb">
-			       <li class="cur"><a href="/">Hot</a></li>
-				   <li><a href="/">New</a></li>
-				   <li><a href="/">Recommend</a></li>
-			  </ul>
-		  </div>
-		  <div class="tab-main" id="tb-main">
-		      <div class="bd bd-news" style="display:block;"><ul>
-			      <li><a href="/" target="_blank">住在手机里的朋友</a></li>
-				   <li><a href="/" target="_blank">教你怎样用欠费手机拨打电话</a></li>
-				   <li><a href="/" target="_blank">原来以为，一个人的勇敢是，删掉他的手机号码...</a></li>
-				   <li><a href="/" target="_blank">手机的16个惊人小秘密，据说99.999%的人都不知</a></li>
-				   <li><a href="/" target="_blank">你面对的是生活而不是手机</a></li>
-				   <li><a href="/" target="_blank">豪雅手机正式发布! 在法国全手工打造的奢侈品</a></li>
-			  </ul></div>
-			   <div class="bd bd-news" ><ul>
-			      <li><a href="/" target="_blank">原来以为，一个人的勇敢是，删掉他的手机号码...</a></li>
-				   <li><a href="/" target="_blank">手机的16个惊人小秘密，据说99.999%的人都不知</a></li>
-				   <li><a href="/" target="_blank">住在手机里的朋友</a></li>
-				   <li><a href="/" target="_blank">教你怎样用欠费手机拨打电话</a></li>
-				   <li><a href="/" target="_blank">你面对的是生活而不是手机</a></li>
-				   <li><a href="/" target="_blank">豪雅手机正式发布! 在法国全手工打造的奢侈品</a></li>
-			  </ul></div>
-			   <div class="bd bd-news" ><ul>
-			      <li><a href="/" target="_blank">手机的16个惊人小秘密，据说99.999%的人都不知</a></li>
-				   <li><a href="/" target="_blank">你面对的是生活而不是手机</a></li>
-				   <li><a href="/" target="_blank">住在手机里的朋友</a></li>
-				   <li><a href="/" target="_blank">豪雅手机正式发布! 在法国全手工打造的奢侈品</a></li>
-				   <li><a href="/" target="_blank">你面对的是生活而不是手机</a></li>
-				   <li><a href="/" target="_blank">原来以为，一个人的勇敢是，删掉他的手机号码...</a></li>
-			  </ul></div>
-		  </div>
-	   </div>
-	   <div class="cloud">
-	     <h3>Tags</h3>
-		  <ul>
-		    <li><a href="/">个人博客</a></li>
-			 <li><a href="/">web开发</a></li>
-			 <li><a href="/">前端设计</a></li>
-			 <li><a href="/">Html</a></li>
-			 <li><a href="/">CSS3</a></li>
-			 <li><a href="/">CSS3+HTML5</a></li>
-			 <li><a href="/">百度</a></li>
-			 <li><a href="/">JavaScript</a></li>
-			 <li><a href="/">C/C++</a></li>
-			 <li><a href="/">ASP.NET</a></li>
-			 <li><a href="/">IOS开发</a></li>
-			 <li><a href="/">Android开发</a></li>
-			 <li><a href="/">PHP</a></li>
-			 <li><a href="/">VS</a></li>
-		  </ul>
-	   </div>
-	   <div class="tuwen">
-	     <h3>Comtributions</h3>
-		 <ul>
-		   <li><a href="/"><img src="images/01.jpg"><b>user1</b></a>
-		      <p>
-              	<p class="autor">
-				    <span class="lm f_l">
-					    <a href="/">Java</a>
-					    <a href="/">Education</a> <a href="/">Cooking</a>
-					 </span>
-                  </p>
-			      <span class="tulanum"><a href="/">Contributions</a></span>
-				   <span class="tutime">3344</span>
-			   </p>
-		   </li>
-		   <li><a href="/"><img src="images/02.jpg"><b>The introduction of the user</b></a>
-		      <p>
-              	  <p class="autor">
-				    <span class="lm f_l">
-					    <a href="/">Java</a>
-					    <a href="/">Education</a> <a href="/">Cooking</a>
-					 </span>
-                  </p>
-			      <span class="tulanum"><a href="/">username</a></span>
-				   <span class="tutime">343587</span>
-			   </p></li>
-		   <li><a href="/"><img src="images/03.jpg"><b>手机的16个惊人小秘密，据说99.999%的人都不知</b></a>
-		      <p>
-			      <span class="tulanum"><a href="/">手机配件</a></span>
-				   <span class="tutime">2016-02-16</span>
-			   </p></li>
-		   <li><a href="/"><img src="images/06.jpg"><b>原来以为，一个人的勇敢是，删掉他的手机号码...</b></a>
-		      <p>
-			      <span class="tulanum"><a href="/">手机配件</a></span>
-				   <span class="tutime">2016-02-16</span>
-			   </p></li>
-		   <li><a href="/"><img src="images/04.jpg"><b>豪雅手机正式发布! 在法国全手工打造的奢侈品</b></a>
-		      <p>
-			      <span class="tulanum"><a href="/">手机配件</a></span>
-				   <span class="tutime">2016-02-16</span>
-			   </p></li>
-		 </ul>
-	   </div>
-	   <div class="ad"><img src="images/03.jpg"></div>
-	   <div class="links">
-	     <h3><span><a href="/">申请友情链接</a></span>友情链接</h3>
-		 <ul>
-		   <li><a href="/">醉牛逼的武魂生涯</a></li>
-		    <li><a href="/">观察者网</a></li>
-			 <li><a href="/">中国投资</a></li>
-			  <li><a href="/">强国论坛</a></li>
-			   <li><a href="/">车讯网</a></li>
-			    <li><a href="http://www.genban.org">跟版模板网</a></li>
-				 <li><a href="/">一带一路门户网</a></li>
-		 </ul>
-	   </div>
-	 </div>
-  </article>
-</body>
+   <head>
+      <title>Bootstrap 妯℃澘</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- 寮曞叆 Bootstrap -->
+     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	  <!-- jQuery (Bootstrap 鐨� JavaScript 鎻掍欢闇�瑕佸紩鍏� jQuery) -->
+      <script src="https://code.jquery.com/jquery.js"></script>
+      <!-- 鍖呮嫭鎵�鏈夊凡缂栬瘧鐨勬彃浠� -->
+      <script src="js/bootstrap.min.js"></script>
+
+
+   </head>
+   <body>
+   <div class="container">
+   <div class="row">
+	 <div class="col-md-12">	
+		<ul class="nav nav-pills">
+           <li class="active"><a href="#">LOGO</a></li>
+           <li><a href="#">Q&A</a></li>
+           <li><a href="#">JOB</a></li>
+           <li><a href="#">SUPPORT</a></li>
+           <form class="form-search navbar-left">
+   				<input class="input-medium search-query" type="text" /> <button type="submit" class="btn">SEARCH</button>
+            </form>
+           
+           
+           
+           <li class="dropdown pull-right">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                 ACCOUNT <span class="caret "></span><span class="badge ">2</span>
+              </a>
+              <ul class="dropdown-menu">
+                 <li><a href="#">MY SETTING</a></li>
+                 <li><a href="#">MY Q&A</a></li>
+                 <li><a href="#">HELP</a></li>
+                 <li class="divider"></li>
+                 <li><a href="#">EXIT</a></li>
+              </ul>
+           </li>
+           
+        </ul>
+      </div>
+     </div> 
+      <div class="row">
+     	<div class="col-md-12 btn-group-xs">
+        <div class="btn-group">
+ 		<button type="button" class="btn btn-default">java</button>
+  		<button type="button" class="btn btn-default">unix</button>
+ 		<button type="button" class="btn btn-default">vim</button>
+         <button type="button" class="btn btn-default">emac</button>
+  		<button type="button" class="btn btn-default">sal</button>
+ 		<button type="button" class="btn btn-default">c++</button>
+         <button type="button" class="btn btn-default">swift</button>
+  		<button type="button" class="btn btn-default">ios</button>
+ 		<button type="button" class="btn btn-default">php</button>
+         <button type="button" class="btn btn-default">db2</button>
+  		<button type="button" class="btn btn-default">ubuntu</button>
+ 		<button type="button" class="btn btn-default">python</button>
+		</div>
+        </div>
+      </div>
+     
+     <div class="row">
+     	<div class="col-md-8">
+        <table width="27%" class="table table-striped">
+           <thead>
+      <tr>
+         <th>vote number</th>
+         <th>answer number</th>
+         <th>view number</th>
+         <th>Question</th>
+      </tr>
+   </thead>
+         <tbody>
+      <tr>
+         <td><span class="badge ">25</span>votes</td>
+         <td><span class="badge ">0</span>answer</td>
+         <td><span class="badge ">200</span>views</td>
+         <td><a href="#">How can i pass this exam!!! harry!!</a></td>
+      </tr>
+      <tr>
+         <td><span class="badge ">12</span>votes</td>
+         <td><span class="badge ">2</span>answer</td>
+         <td><span class="badge ">120</span>views</td>
+         <td><a href="#">Some thing wrong with my ipad,who can help me!</a></td>
+      </tr>
+      <tr>
+         <td><span class="badge ">130</span>votes</td>
+         <td><span class="badge ">1</span>solve</td>
+         <td><span class="badge ">2k</span>views</td>
+         <td><a href="#">I cant open my pc ,what's problem with it?</a></td>
+      </tr>
+       <tr>
+         <td><span class="badge ">130</span>votes</td>
+         <td><span class="badge ">1</span>solve</td>
+         <td><span class="badge ">2k</span>views</td>
+         <td><a href="#">I cant open my pc ,what's problem with it?</a></td>
+      </tr>
+      <tr>
+         <td><span class="badge ">130</span>votes</td>
+         <td><span class="badge ">1</span>solve</td>
+         <td><span class="badge ">2k</span>views</td>
+         <td><a href="#">I cant open my pc ,what's problem with it?</a></td>
+      </tr>
+      <tr>
+         <td><span class="badge ">130</span>votes</td>
+         <td><span class="badge ">1</span>solve</td>
+         <td><span class="badge ">2k</span>views</td>
+         <td><a href="#">I cant open my pc ,what's problem with it?</a></td>
+      </tr>
+      <tr>
+         <td><span class="badge ">130</span>votes</td>
+         <td><span class="badge ">1</span>solve</td>
+         <td><span class="badge ">2k</span>views</td>
+         <td><a href="#">I cant open my pc ,what's problem with it?</a></td>
+      </tr>
+      <tr>
+         <td><span class="badge ">130</span>votes</td>
+         <td><span class="badge ">1</span>solve</td>
+         <td><span class="badge ">2k</span>views</td>
+         <td><a href="#">I cant open my pc ,what's problem with it?</a></td>
+      </tr>
+            <tr>
+         <td><span class="badge ">130</span>votes</td>
+         <td><span class="badge ">1</span>solve</td>
+         <td><span class="badge ">2k</span>views</td>
+         <td><a href="#">I cant open my pc ,what's problem with it?</a></td>
+      </tr>
+            <tr>
+         <td><span class="badge ">130</span>votes</td>
+         <td><span class="badge ">1</span>solve</td>
+         <td><span class="badge ">2k</span>views</td>
+         <td><a href="#">I cant open my pc ,what's problem with it?</a></td>
+      </tr>
+            <tr>
+         <td><span class="badge ">130</span>votes</td>
+         <td><span class="badge ">1</span>solve</td>
+         <td><span class="badge ">2k</span>views</td>
+         <td><a href="#">I cant open my pc ,what's problem with it?</a></td>
+      </tr>
+            <tr>
+         <td><span class="badge ">130</span>votes</td>
+         <td><span class="badge ">1</span>solve</td>
+         <td><span class="badge ">2k</span>views</td>
+         <td><a href="#">I cant open my pc ,what's problem with it?</a></td>
+      </tr>
+            <tr>
+         <td><span class="badge ">130</span>votes</td>
+         <td><span class="badge ">1</span>solve</td>
+         <td><span class="badge ">2k</span>views</td>
+         <td><a href="#">I cant open my pc ,what's problem with it?</a></td>
+      </tr>
+   </tbody>
+        </table>
+        </div>
+        <div class="col-md-3 ">
+        <img src="img/2.jpg"
+   class="img-rounded">
+
+        
+         
+        </div>
+     </div>
+     
+     
+     <div class="row">
+     	<div class="col-md-12">
+        <p>test</p> 
+        <table class="table table-striped">
+   
+   <thead>
+      <tr>
+         <th>about our website</th>
+         <th>coordination and cooperation</th>
+         <th>useful links</th>
+         <th>subscribe us</th>
+         <th>others</th>
+         
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td><a href="#">about us</a></td>
+         <td><a href="#">contact us</a></td>
+         <td><a href="#">google</a></td>
+         <td><a href="#">Github</a></td>
+         <td><a href="#">DUANG</a></td>
+      </tr>
+      <tr>
+
+         <td><a href="#">join us</a></td>
+         <td><a href="#">help center</a></td>
+         <td><a href="#">University of Wollongong</a></td>
+         <td><a href="#">Facebook</a></td>
+
+      </tr>
+      <tr>
+
+         <td><a href="#">Prestige and authority</a></td>
+         <td><a href="#">our partner</a></td>
+         <td><a href="#">TeamLog</a></td>
+      </tr>
+   </tbody>
+</table>
+        </div>
+     </div>
+   </div>  
+   </body>
 </html>
